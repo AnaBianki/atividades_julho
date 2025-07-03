@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea;
+}
+
+.container {
+    text-align: center;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    width: 350px;
+    margin: 40px auto;
+}
+
+#palavra {
+    font-size: 24px;
+    letter-spacing: 8px;
+    margin: 10px 0;
+}
+
+input {
+    font-size: 18px;
+    text-align: center;
+    width: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#forca {
+    position: relative;
+    margin: 20px auto;
+    width: 120px;
+    height: 200px;
+}
+
+.base, .poste, .haste, .corda,
+.cabeca, .tronco, .braco-esq, .braco-dir, .perna-esq, .perna-dir {
+    position: absolute;
+    background-color: black;
+}
+
+/* Estrutura da forca */
+.base {
+    bottom: 0;
+    left: 10px;
+    width: 100px;
+    height: 10px;
+}
+.poste {
+    bottom: 10px;
+    left: 20px;
+    width: 10px;
+    height: 160px;
+}
+.haste {
+    top: 0;
+    left: 20px;
+    width: 80px;
+    height: 10px;
+}
+.corda {
+    top: 10px;
+    left: 90px;
+    width: 2px;
+    height: 40px;
+    background: beige;
+}
+
+/* Boneco */
+.cabeca {
+    top: 50px;
+    left: 80px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.tronco {
+    top: 80px;
+    left: 93px;
+    width: 5px;
+    height: 40px;
+}
+.braco-esq {
+    top: 90px;
+    left: 93px;
+    width: 20px;
+    height: 2px;
+    transform: rotate(-45deg);
+    transform-origin: right;
+}
+.braco-dir {
+    top: 90px;
+    left: 78px;
+    width: 20px;
+    height: 2px;
+    transform: rotate(45deg);
+    transform-origin: left;
+}
+.perna-esq {
+    top: 120px;
+    left: 93px;
+    width: 20px;
+    height: 2px;
+    transform: rotate(45deg);
+    transform-origin: left;
+}
+.perna-dir {
+    top: 120px;
+    left: 78px;
+    width: 20px;
+    height: 2px;
+    transform: rotate(-45deg);
+    transform-origin: right;
+}
